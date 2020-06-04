@@ -6,3 +6,7 @@ ggplot(data = mtcars,
                      colour = gear,
                      size = qsec)) +
   geom_point(mapping = aes(shape = as.factor(cyl)))
+
+
+ggsave(filename = "My_Plot.png",
+       plot = last_plot())
