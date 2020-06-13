@@ -5,8 +5,8 @@ ggplot(data = mtcars,
                      y = mpg, 
                      colour = gear,
                      size = qsec)) +
-  geom_point(mapping = aes(shape = as.factor(cyl))) +
-  geom_smooth()
+  geom_point(mapping = aes(shape = as.factor(cyl)))
+
 
 
 ggsave(filename = "My_Plot.png",
